@@ -15,6 +15,8 @@ git clone https://github.com/4SS1S/pong-ts
 
 cd pong-ts
 
+git checkout pong-ts-bug-1
+
 nvm use 16
 
 yarn

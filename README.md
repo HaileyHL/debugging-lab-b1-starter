@@ -24,8 +24,8 @@ yarn start
 
 ---
 
-## Bugs
+## Buggy behavior
 
-This fork has branches that contain intentionally inserted bugs to be used for research purposes.
+The scoreboard at the top of the window should update as the player and/or computer earn points. In this branch, the scoreboard is broken and remains at 0-0 even after a point is made.
 
 ### @Author [@4ss1s](https://github.com/4SS1S)

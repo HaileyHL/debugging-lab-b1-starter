@@ -100,13 +100,11 @@ export class Game implements GameInterface {
 
     if (this.ball.getX() <= 0) {
       this.reset();
-      this.player2Goal++;
       return;
     }
 
     if (this.ball.getX() >= this.WINDOW_WIDTH - 10) {
       this.reset();
-      this.player1Goal++;
       return;
     }
 

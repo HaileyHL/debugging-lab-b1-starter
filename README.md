@@ -2,23 +2,20 @@
 
 ![gif](/src/assets/gifs/pong.gif)
 
-Online test [demo](https://4ss1s.github.io/pong-ts)
- 
-Recriation of pong game with typescript
+## Introduction
 
+This game is a canvas study case to make games.
 
-## Intrudution
+## To run:
 
-This game is a canvas study case to make games
-
-## How to Test
-
-on your terminal:
+In your terminal:
 
 ```bash
 git clone https://github.com/4SS1S/pong-ts
 
 cd pong-ts
+
+nvm use 16
 
 yarn
 
@@ -27,10 +24,8 @@ yarn start
 
 ---
 
-## ToDo
-- [x] - Run a game in browser
-- [x] - Sounds
-- [ ] - Play mobile
-- [ ] - Play with friends (I need to make a server)
+## Bugs
+
+This fork has branches that contain intentionally inserted bugs to be used for research purposes.
 
 ### @Author [@4ss1s](https://github.com/4SS1S)

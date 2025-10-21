@@ -15,7 +15,6 @@ class Ball implements BallInterface {
   private speedY = Math.random() < 0.3 ? -1 : 1;
   private player1: PositionInterface = { _x: 0, _y: 0 };
   private player2: PositionInterface = { _x: 0, _y: 0 };
-  private song = false;
   private sprite: CanvasImageSource;
   private oldStyle = false;
 
@@ -115,20 +114,7 @@ class Ball implements BallInterface {
   }
 
   private invert(position: number): number {
-    this.playSong();
     return (position = position * -1);
-  }
-
-  private playSong() {
-    let audio = new Audio(
-      this.song
-        ? require("../../assets/audio/1.mp3")
-        : require("../../assets/audio/2.mp3")
-    );
-
-    audio.play();
-
-    this.song = !this.song;
   }
 }
 

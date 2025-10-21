@@ -92,7 +92,7 @@ class Ball implements BallInterface {
     }
 
     if (this._y <= 0 || this._y + 10 >= this._canvas.height) {
-      this.speedY = this.invert(this.speedY);
+      this.invert(this.speedY);
     }
 
     /**
@@ -109,7 +109,7 @@ class Ball implements BallInterface {
         this._y <= this.player2._y + 50 &&
         this._y >= this.player2._y)
     ) {
-      this.speedX = this.invert(this.speedX);
+      this.invert(this.speedX);
     }
   }
 

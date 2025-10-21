@@ -24,8 +24,8 @@ yarn start
 
 ---
 
-## Bugs
+## Buggy behavior
 
-This fork has branches that contain intentionally inserted bugs to be used for research purposes.
+This branch contains a bug that makes the ball fly off the screen, rather than bouncing off of the walls or paddles.
 
 ### @Author [@4ss1s](https://github.com/4SS1S)

@@ -114,7 +114,6 @@ class Ball implements BallInterface {
   }
 
   private invert(position: number): number {
-    this.playSong();
     return (position = position * -1);
   }
 }

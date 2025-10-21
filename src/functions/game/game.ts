@@ -15,7 +15,7 @@ export class Game implements GameInterface {
   private ai: PlayerInterface;
 
   private WINDOW_HEIGHT = 600;
-  private WINDOW_WIDHT = 800;
+  private WINDOW_WIDTH = 800;
 
   private player1Goal = 0;
   private player2Goal = 0;
@@ -23,7 +23,7 @@ export class Game implements GameInterface {
   constructor(_canvas: HTMLCanvasElement) {
     this._canvas = _canvas;
     this.ctx = this._canvas.getContext("2d") as CanvasRenderingContext2D;
-    this._canvas.width = this.WINDOW_WIDHT;
+    this._canvas.width = this.WINDOW_WIDTH;
     this._canvas.height = this.WINDOW_HEIGHT;
 
     this.ball = new Ball(this._canvas, this.ctx);
@@ -32,7 +32,7 @@ export class Game implements GameInterface {
       this._canvas,
       this.ctx,
       this.ball,
-      this.WINDOW_WIDHT,
+      this.WINDOW_WIDTH,
       this.WINDOW_HEIGHT
     );
   }
@@ -42,12 +42,12 @@ export class Game implements GameInterface {
     this.ctx.fillStyle = "#fff";
     this.ctx.fillText(
       this.player1Goal.toString(),
-      this.WINDOW_WIDHT / 2 - 60,
+      this.WINDOW_WIDTH / 2 - 60,
       50
     );
     this.ctx.fillText(
       this.player2Goal.toString(),
-      this.WINDOW_WIDHT / 2 + 40,
+      this.WINDOW_WIDTH / 2 + 40,
       50
     );
 
@@ -56,8 +56,8 @@ export class Game implements GameInterface {
     this.ctx.shadowBlur = 2;
     this.ctx.beginPath();
     this.ctx.setLineDash([5, 5]);
-    this.ctx.moveTo(this.WINDOW_WIDHT / 2 + 5, 0);
-    this.ctx.lineTo(this.WINDOW_WIDHT / 2 + 5, this.WINDOW_WIDHT);
+    this.ctx.moveTo(this.WINDOW_WIDTH / 2 + 5, 0);
+    this.ctx.lineTo(this.WINDOW_WIDTH / 2 + 5, this.WINDOW_WIDTH);
     this.ctx.stroke();
   }
 
@@ -68,7 +68,7 @@ export class Game implements GameInterface {
       this._canvas,
       this.ctx,
       this.ball,
-      this.WINDOW_WIDHT,
+      this.WINDOW_WIDTH,
       this.WINDOW_HEIGHT
     );
 
@@ -104,7 +104,7 @@ export class Game implements GameInterface {
       return;
     }
 
-    if (this.ball.getX() >= this.WINDOW_WIDHT - 10) {
+    if (this.ball.getX() >= this.WINDOW_WIDTH - 10) {
       this.reset();
       this.player1Goal++;
       return;

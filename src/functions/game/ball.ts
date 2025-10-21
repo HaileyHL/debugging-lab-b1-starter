@@ -83,13 +83,13 @@ class Ball implements BallInterface {
     if (this._x <= 0) {
       this.speedX = -1;
 
-      console.log("Ponto pro player 2");
+      console.log("Point for player 2");
     }
 
     if (this._x + 10 >= this._canvas.width) {
       this.speedX = 1;
 
-      console.log("Ponto pro player 1", window.innerWidth);
+      console.log("Point for player 1");
     }
 
     if (this._y <= 0 || this._y + 10 >= this._canvas.height) {

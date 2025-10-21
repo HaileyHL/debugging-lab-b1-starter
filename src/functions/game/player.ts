@@ -30,13 +30,13 @@ class Player implements PlayerInterface {
         switch (event.key) {
           case "ArrowDown":
             if (this._y < this._canvas.height - 50) {
-              this._y += 1;
+              this._y += 10;
             }
             break;
 
           case "ArrowUp":
             if (this._y > 0) {
-              this._y -= 1;
+              this._y -= 10;
             }
             break;
         }
